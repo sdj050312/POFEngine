@@ -1,0 +1,522 @@
+*{
+    margin: 0 auto;
+    
+}
+.head{
+    z-index: 100;
+    box-sizing: border-box;
+    position: fixed;
+    text-align: center;
+    padding: 5px;
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(9, 7, 41);
+}
+.active-header{
+    background-color: rgb(223, 221, 246);
+    
+}
+.active{
+    border: solid 1px;
+    background-color: rgb(17, 2, 83);
+    border-radius: 10px;
+    color: rgb(21, 16, 100);
+}
+.heada{
+    background-color: rgb(17, 2, 83);
+    border-radius: 10px;
+    border-radius: 5px;
+    border: solid 1px wheat;
+    color: rgb(17, 2, 83);
+}
+.head span{
+    margin-left: 10px;
+    float: left;
+    font-size: 2rem;
+    color: antiquewhite;
+    font-weight: 900;
+}
+.head a{ 
+    float: right;
+    margin-left: 15px;
+    text-decoration: none;
+    color: rgb(247, 136, 96);
+    font-size:25px;
+    font-weight: 900;
+    
+}
+/*section1*/
+
+.section01{
+    padding: 5%;
+    display: flex;
+    flex: 1;
+    background-color: rgb(223, 221, 246);
+ 
+    
+    
+}
+.type1{
+    font-size: 70px;
+}
+.type{
+    font-size: 80px;
+}
+.set01-content{
+    margin-top: 5%;
+    text-align: center;
+    display: inline-block;
+    font-size: 6.5em;
+    width: 100%;
+    font-weight: 1000;
+    height: 100%;
+    
+}
+.btn{
+    
+    
+    text-align: center;
+}
+.set01-content button{
+  
+    font-size: 50px;
+    font-family: 900;
+    border: none;
+    background-color: rgb(75, 37, 227);
+    color: white;
+    padding: 10px  30px;
+    border-radius: 20px;
+    bottom: 0;
+    transition: 0.3s;
+}
+.set01-content span{
+    background-color: rgb(9, 7, 41);
+    color: wheat;
+    font-family: 900;
+}
+button:hover{
+    color: rgb(37, 116, 227);
+    background-color: whitesmoke;
+}
+
+.section01 table{
+    margin-top: 3em;
+    font-size: 25px;
+  
+    border-collapse: collapse;
+}   
+td,th{
+    
+
+}
+
+th{background-color: rgb(9, 7, 41);
+    color: white;
+    font-weight: 900;
+    font-size: 2rem;
+}
+/*section-01*/
+
+.section01-1{
+
+    background: url(../img/pof-img-removebg-preview.png);
+    width: 55%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    animation: animation linear 2s infinite; 
+    transform: translateY(10%);
+ 
+}
+@keyframes animation {
+    0%{
+        transform: translateY(20%);
+    }
+    50%{
+        transform: translateY(25%);
+    }
+    100%{
+        transform: translateY(20%);
+    }
+}
+
+
+/* section 02*/
+.section02{
+    padding: 10%;
+    
+    background-color: rgb(9, 7, 41);
+    box-sizing: border-box;
+     display: flex;
+     color: white;
+}
+.set2-01 img{
+    background-color:rgb(13, 13, 13);
+    width: 430px;
+    height: 470px;
+}
+.set2-02 span{
+    margin-left: 30px;
+    font-size: 5rem;
+    font-weight: 900;
+    color: rgb(247, 136, 96);
+}
+.set2-02{
+    position: relative;
+    margin-left: 1%;
+    float: left;
+    border: solid 1px;
+    padding: 5px;    
+
+}
+
+.set2-02 table{
+  
+    
+  float: left;
+
+    text-align: center;
+}
+th, td{
+    padding: 20px;
+}
+th{
+  color: rgb(247, 136, 96); 
+}
+td{
+    font-size: 25px;
+}
+.set2-02 button{
+  
+    position: absolute;
+    bottom:40px;
+    right: 50px;
+    font-weight: 900;
+    border-radius: 15px;
+    background-color: rgb(223, 221, 246);
+    color: rgb(9, 7, 41);
+     font-size: 25px;
+    border: none;
+    transition: 0.3s;
+}
+.set2-02 button:hover{
+    background-color: rgb(21, 16, 100);
+    color: rgb(223, 221, 246);
+}
+/*section-03*/
+.section03{
+    background-color:rgb(9, 7, 41);
+   box-sizing: border-box;
+   padding: 2%;
+   height: 100%;
+   width: 100%;
+   text-align: center;
+    
+}
+.sect {
+    display: flex;
+}
+.section03 h1{
+    color: rgb(247, 136, 96);
+    font-size: 9rem;
+}
+.skill{
+    font-size: 1.2em;    
+    
+
+}   
+h3{
+    font-size: 70px;
+    color: white;
+}
+p{
+    font-size: 25px;
+    color: wheat;
+}
+.skill-img{
+    
+    right: 0;
+    transform: translateY(-20%);
+  
+}
+.skill-img img{
+    scale : 1.2;
+    animation: animation linear 2s infinite;
+}
+.skillbox{
+    
+    margin-left: 9%;
+    margin-top: 5%;
+    float: left;
+    position: relative;
+ 
+ 
+    width: 160px;
+    height: 150px;
+    text-align: center;
+    background-color: rgb(39, 12, 148);
+    border-radius: 20px;
+    
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    
+}
+.skillbox i {
+    transform: translateY(30%);
+    top:30px;
+    left: 45px;
+    font-size: 90px;
+    color: white;
+}
+.skill-content{
+    transform: translateY(95%);
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+}
+
+.skillbox:hover i{
+    font-size: 120px;
+   transform: rotate(-45deg) translateY(-20px);
+}
+/*section04*/
+.section04{
+    padding-bottom: 50px;
+    width: 100%;
+    height: 100%;
+   
+    background-color: rgb(9, 7, 41);
+}
+.stack-box{
+    background-color: rgb(33, 3, 171);
+   
+    width: 650px;
+    height: 410px;
+    border-radius: 20px;
+    position: relative;
+    display: block;
+}
+.stack-title{
+   
+    background-color: rgb(75, 37, 227);
+    border-radius: 20px 20px 0px 0px;
+    text-align: center;
+    font-size: 40px;
+    padding: 1%;
+    color: white;
+    font-weight: 900;
+}
+.stack-content{
+  
+    width: 100%;
+    margin-top: 10px;
+    top:15%;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.stack-content i{
+    margin-right: 3px;
+    margin-top: 3px;
+    font-size: 35px;
+}
+.stack-intro{
+  
+    width: 25%;
+    height: 300px;
+    position: absolute;
+    float: left;
+  
+}
+.stack-content1{
+    text-align: center;
+    margin-left: 10px;
+    
+   
+}
+.stack-content p {
+    color: white;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+/*graph*/
+.stack-graph-chart{
+  
+    width: 70%;
+    height: 300px;
+    position: absolute;
+    margin-right: 10px;
+    right: 0;
+    top:50px;
+   
+}
+.stack-graph{
+   
+    margin-top: 40px;
+    background: linear-gradient(to right, rgb(44, 59, 176), rgba(178, 72, 239, 0.5));
+    width: 90%;
+    height: 25px;
+}
+/*section05*/
+.section05{
+    padding-bottom: 10%;
+    width: 100%;
+    font-size: 5rem;
+    text-align: center;
+    background-color: rgb(75, 37, 227);
+}
+.project{
+    width: 100%;
+    height: 20;
+    
+    text-align: center;
+}
+.project button{
+    font-size: 30px;
+    background-color: rgb(21, 16, 100);
+    border: none;
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.project button:hover{
+    background-color: rgb(223, 221, 246);
+    color: rgb(21, 16, 100);
+}
+.project-picture{
+    position: relative;
+    top:80px;
+   
+    display: flex
+}
+.project-01, .project-02, .project-03{
+    width: 30%;
+    border: solid 1px;
+    height: 300px;
+}
+.project-01{
+    border-radius: 10px;
+    background-image: url(../img/캡처.PNG);
+    background-size: 102% 100%;
+}
+.project-plus{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0 , 0.5) ;
+
+}
+.project-plus h3{
+    transform: translateY(50%);
+}
+
+.project-plus button{
+    transform: translateY(100%);
+    font-size: 30px;
+    border: none;
+    font-weight: 900;
+    background-color: rgb(17, 2, 83);
+    color: rgb(223, 221, 246);
+    border-radius: 10px;
+    
+}
+/**/
+.footer{
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    background-color: rgb(8, 1, 41);
+    position: relative;
+    padding-bottom: 15%;
+}
+.footer h1{
+    color: white;
+    font-size: 6rem;
+    padding: 10px;
+}
+.contact{
+    font-weight: 900;
+    display: flex;
+   position: absolute;
+   left: 10px;
+ 
+}
+.contact p{
+    font-size: 30px;
+}
+.contact img{
+    margin-left: 20px;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(13, 13, 13);
+}
+.contact-btn{
+    position: absolute;
+    bottom: -10px;
+    width: 70%;
+}
+.contact-btn button{
+   font-size: 30px;
+   background-color: rgb(247, 136, 96);
+   font-weight: 900;
+   border-radius: 10px;
+   border: none;
+   color: white;
+   transition: 0.3s;
+}
+.contact-btn button:hover{
+    background-color: rgb(223, 221, 246);
+    color: rgb(247, 136, 96);
+}
+/*icon*/
+.section06-icon{
+    position: absolute;
+    right: 10px;
+    color: wheat;
+   
+    width: 40%;
+    height: 100px;
+}
+.section06-icon i{
+    font-size: 50px;
+    margin-left: 100px;
+}
+.section-content{
+    display: flex;
+    
+    width: 30%;
+}
+.section06-icon table{
+    text-align: left;
+    
+}
+.section06-icon th{
+    font-size: 20px;
+    color: white;
+    background: none;
+    
+}
+.section06-icon i{
+    font-size: 50px;
+}
+.section06-icon table{
+    border-collapse: collapse;
+  
+}
+.section06-icon td>p{
+  
+    font-size: 20px;
+}
+
+.section06-icon th{
+    
+    text-align: center;
+   
+}
+.section06-icon th>i{
+    transform: translateX(-40px);
+    text-align: center;
+    color: rgb(247, 136, 96);
+}
