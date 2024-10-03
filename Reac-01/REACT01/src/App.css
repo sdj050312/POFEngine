@@ -1,0 +1,9 @@
+.app button{
+    border: solid 1px;
+    text-align: center;
+    background-color: red;
+}
+.map{
+    display: flex;
+    padding: 2%;
+}

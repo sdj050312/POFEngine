@@ -1,0 +1,42 @@
+*{
+    margin: 0 auto;
+}
+.title{
+    border-radius: 20px;
+    width: 50%;
+    text-align: center;
+    font-size: 50px;
+    background-color: rgb(197, 197, 204);
+}
+.map{
+    margin-top: 10px;
+    font-size: 30px;
+    text-align: center;
+    width: 50%;
+    background-color: rgb(197, 197, 204);
+    border-radius: 20px;
+    color: blue;
+}
+.main{
+    margin-top: 50px;
+    background-color: rgb(197, 197, 204);
+    text-align: center;
+    width: 50%;
+    border-radius: 20px;
+    height: 500px;
+
+}
+.main button{
+    transform: translateY(350%);
+    margin-left: 10px;
+    border: solid 2px;
+    color: blue;
+    font-size: 40px;
+    padding: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+.main button:hover{
+    background-color: blue;
+    color: white;
+}

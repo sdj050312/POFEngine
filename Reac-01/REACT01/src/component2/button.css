@@ -1,0 +1,13 @@
+button{
+    font-size: 30px;
+    font-weight: 900;
+    color: black;
+    background-color: red;
+    border: none;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+button:hover{
+    background-color: black;
+    color: red;
+}
