@@ -1,0 +1,72 @@
+*{
+    margin: 0 auto;
+}
+.skill-progress{
+    transform: translateY(100px);
+    border: solid 1px;
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    color: white;
+    background-color: rgb(29, 28, 28);
+    border-radius: 20px;
+}
+h1{
+    font-size: 40px;
+}
+.item{
+  
+    height: 30px;
+    margin-top: 20px;
+}
+.item span{
+    color: white;
+    font-size: 25px;
+ float: left;
+ margin-left: 10px;
+}
+.item span:nth-child(2){
+    float: right;
+    margin-right: 10px;
+}
+.progress{
+   width: 90%;
+   border: solid 3px coral;
+   padding: 5px;  
+   border-radius: 5px;
+   position: relative;
+   height: 22px;
+}
+
+.progress-level
+{   position: absolute;
+    width: 90%;
+    background: linear-gradient(to right,rgb(70, 50, 161), rgb(87, 196, 206) );
+    border: solid 1px;
+    height: 20px;
+    border-radius: 5px;
+    animation: graph 1s;
+    animation-fill-mode: both;
+}
+.skill-progress .item:nth-child(1) .progress-level{
+    animation-delay: 0s;
+}
+
+.skill-progress .item:nth-child(2) .progress-level{
+    animation-delay: 0.3s;
+}
+.skill-progress .item:nth-child(3) .progress-level{
+    animation-delay: 0.4s;
+}
+.skill-progress .item:nth-child(4) .progress-level{
+    animation-delay: 0.6s;
+}
+.skill-progress .item:nth-child(5) .progress-level{
+    animation-delay: 0.7s;
+}
+@keyframes graph {
+    0%{
+       width: 0;
+    }
+
+}
