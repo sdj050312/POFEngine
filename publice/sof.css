@@ -70,3 +70,106 @@ h1{
     }
 
 }
+.tab-map{
+    position: relative;
+    left: -30%;
+    border: solid 1px;
+    width: 500px;
+    height: 100px;
+    transform: translateY(200px);
+}
+.tab-map label{
+  position: absolute;
+    border: solid 1px;
+    background-color: rgb(29, 28, 28);
+    width: 30px;
+    height: 30px;
+    border-radius: 60%;
+    font-size: 20px;
+    color: wheat;
+    text-align: center;
+    cursor: pointer;
+}
+
+label:nth-child(1){
+    left: 50px;
+}
+label:nth-child(2){
+    left: 100px;
+}
+label:nth-child(3){
+    left: 150px;
+}
+label:nth-child(4){
+    left: 200px;
+}
+
+.map{
+    display: flex;
+    border: solid 1px;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    transform: translateY(200px);
+    padding-bottom: 10px;
+}
+.map img{
+   
+}
+.map input{
+
+}
+.content {
+    position: absolute;
+    opacity: 0;
+    padding-bottom: 10px;
+    transition: 0.3s;
+}
+input[id = "tab1"]:checked ~ .slide1{
+    opacity: 1;
+}
+input[id = "tab2"]:checked ~ .slide2{
+    opacity: 1;
+}
+input[id = "tab3"]:checked ~ .slide3{
+    opacity: 1;
+}
+input[id = "tab4"]:checked ~ .slide4{
+    opacity: 1;
+}
+.book{
+    white-space: nowrap;
+    transform: translateY(300px);
+    border: solid 1px;
+    height: 200px;
+    border-block: 1px black;
+    padding: 10px;
+    white-space: nowrap;
+}
+.bok{
+
+    animation: loading 30s linear infinite;
+    display: inline-block;
+   
+}
+.bok img{
+    opacity: 0.8;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px rgba(104, 102, 102, 0.9);
+    width: 200px;
+    height: 200px;
+}
+@keyframes loading{
+    0%{
+        transform: translateX(0%);
+    }
+  
+    100%{
+        transform: translateX(-100%);
+    }
+}
