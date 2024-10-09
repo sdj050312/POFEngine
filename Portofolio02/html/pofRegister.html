@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="../Css/pof2Register.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+
+</head>
+<body>
+    <div class = "main">
+        <div class = "login">
+            <div class = "login-map">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class = "title">
+            <h1>30분 독쏘</h1>
+            <p>서비스 이용시 회원가입은 필수</p>
+                </div>
+            <div class = "container">
+                
+                <div class= check-content>
+                    <input type="checkbox" id = "agree_all" name = "register" class = "chekControl" onclick="selcectAll(this)">
+                    <input type="checkbox" id = "agree_1"name = "register" class = "chekControl">
+                    <input type="checkbox" id = "agree_2"name = "register" class = "chekControl">
+                    <input type="checkbox" id = "agree_3"name = "register" class = "chekControl">
+                    <input type="checkbox" id = "agree_4"name = "register" class = "chekControl">
+                </div>
+                <div class = "content">
+                    <label for="agree_all" class = "all">전체 동의하기</label>
+                    <label for="agree_1" class = "checkControl" id ="service">서비스이용약관 동의</label>
+                    <label for="agree_2" class = "checkControl" id = "privacy">개인정보 수집 및 이용 동의</label>
+                    <label for="agree_3" class = "checkControl" id = "marketing">마케팅 정보 수신 동의</label>
+                    <label for="agree_4" class = "checkControl" id = "infrom">개인정보 제3자 제공동의</label>
+                    <button type ="submit" disabled>다음</button>
+                </div>
+
+            
+           </div>
+              <script>
+              
+
+                // $('#service').click(function(){
+                //     $(this).toggleClass('active');
+               
+                //         $('button').prop('disabled', false);
+                    
+                // })
+
+ 
+   
+
+
+               
+              </script>
+             <script src = "../src/register.js"></script>
+   
+</body>
+</html>

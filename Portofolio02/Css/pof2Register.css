@@ -1,0 +1,182 @@
+*{
+    margin: auto 0;
+}
+
+.title{
+    position: relative;
+    width: 100%;
+    top:30px;
+    text-align: center;
+
+}
+.title h1{
+    font-size:45px;
+    color: rgb(29, 9, 3);
+}
+.title p{
+    font-size: 20px;
+    font-weight: 900;
+    color: rgb(165, 71, 42);
+}
+.main{
+  
+   
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    background-attachment: fixed;
+    background: url(../pof02img/pofboook.jpg);
+    background-size: 100% 100%;
+}
+.login{
+    z-index: 100;
+    position: relative;
+    width: 500px;
+    height: 100vh;
+    background-color: rgb(241, 231, 213);
+}
+.container{
+    position: absolute;
+ 
+    height: 100%;
+    top:150px;
+   left: 50px;
+    text-align: center;
+
+
+}
+
+.container input{
+    border-radius: 10px;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    border: solid 2px rgb(0, 0, 0,0.5);
+    padding: 10px;
+    display: block;
+    
+}
+input::placeholder{
+    font-size: 20px;
+}
+.container button{
+    margin-top: 100px;
+    width: 400px;
+    padding: 10px;
+    font-size: 25px;
+    background-color: orangered;
+    border: none;
+    border-radius: 10px;
+    font-weight: 900;
+   
+    left: 0px;
+    transition: 0.3s;
+
+}
+button:hover{
+    background-color: rgb(248, 205, 125);
+    color: orangered;
+}
+.click-container{
+    margin-top: 20px;
+}
+
+
+
+/*login - icon*/
+.login-map{
+  
+    position: relative;
+    height: 100px;
+    width: 100px;
+    top:50px;
+    left: 30px;
+    transition: 0.5s;
+    text-align: center;
+
+}
+.login span{
+    right: 10px;
+    width: 100px;
+    height: 100px;
+    transition: 0.5s;
+    position: absolute;
+
+}
+.login span:nth-child(1){
+    border-radius: 20px 60px 30px 40px;
+    transform: rotate(180deg);
+    background-color: orangered;
+    
+    animation: ani linear infinite 10s;
+}
+
+.login span:nth-child(2){
+    border-radius: 20px 60px 30px 40px;
+    transform: rotate(20deg);
+    
+    animation: ani linear infinite 10s reverse; 
+    background-color: orangered; 
+}
+
+.login span:nth-child(3){
+    
+    animation: ani linear infinite 10s;
+    background-color: orangered;
+    border-radius: 20px 60px 30px 40px;
+}
+.login span:hover {
+    background-color: rebeccapurple;
+}
+.login-map:hover span{
+background-color: rgb(204, 124, 124);
+}
+@keyframes ani{
+    0%{
+        transform: rotate(0deg);
+       
+    }
+    100%{
+     
+        transform: rotate(360deg);
+    }
+}
+.check-content{
+    text-align: center;
+   z-index: 1;
+    position: relative;
+   top:150px;
+   
+    
+}
+.content{
+    position: absolute;
+    top:150px;
+    text-align: center;
+   
+}
+.check-content input{
+    margin-top: 30px;
+    
+}
+input[type ="checkbox"]{
+    display: none;
+}
+label{
+    margin-top: 10px;
+    display: flex;
+    font-weight: 900;
+    font-size: 25px;
+    cursor: pointer;
+    transform: translateX(50px);
+}
+input[name ="register"]:checked label{
+    color: rgb(165, 71, 42);
+}
+.active{
+    color: rgb(165, 71, 42);
+}
+input[type = "checkbox"]:checked ~ .content label{
+    color: rgb(165, 71, 42);
+}
