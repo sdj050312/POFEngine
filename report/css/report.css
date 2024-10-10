@@ -1,0 +1,401 @@
+:root{
+    --backColor: #2D374B;
+    --content-01:  #1F2839;
+    
+    --text: #FFFFFF;
+    --button: #4DE785;
+    --check: #4DE785;
+    --title:#4DE785;
+    --header-title:16px;
+
+
+}
+*{
+    margin: 0 auto;
+}
+body{
+    background-color: var(--backColor);
+}
+.header{
+    display: flex;
+    padding: 20px;
+   
+    width: 1500px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.header h2{
+    color: var(--title);
+}
+.header a{
+    margin-top: 5px;
+    font-size: var(--header-title);
+    text-decoration: none;
+    color: var(--text);
+    
+}
+/*section-01*/
+.section-01{
+    
+    height: 510px;
+
+}
+.section-comment{
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: var(--text);
+}
+.section1-log{
+    margin-top: 50px;
+    text-align: center;
+}
+.section-02{
+
+
+}
+/*section-02*/
+label[for = "tab1"].active{
+    background-color: white;
+    color: white;
+}
+.section-02-button label:hover{
+    background-color: white;
+    color: #1F2839;
+}
+.section-02-button label:hover i{
+   
+    color: #1F2839;
+}
+.section-02{
+    height: 620px;
+    
+}
+.section-02-title{
+    text-align: center;
+    font-size: 28px;
+    color: var(--text);
+    font-weight: 900;
+}
+.section-02-button{
+    height: 28px;
+    width: 100px;
+ 
+    position: relative;
+    right: -400px;
+    top:40px
+}
+.section-02-button label{
+    cursor: pointer;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+}
+label[for="tab1"]{
+    transition: 0.5s;
+    left: 50px;
+    width: 30px;
+    height: 30px;
+    border: solid 1px;
+    color: var(--text);
+}
+label[for="tab2"]{
+    transition: 0.5s;
+    color: var(--text);
+    left: 0px;
+    width: 30px;
+    height: 30px;
+    border: solid 1px;
+}
+.section-02-button input{
+        display: none;     
+        
+}
+.section-02-cardSlide{
+   
+    width: 1030px;
+    padding-top: 50px;
+    overflow: hidden;
+    
+}
+
+
+.section-02-card{
+    width: 2100px;
+    height: 500px;
+
+}
+.section-02-button i{
+    color: white;
+    position: absolute;
+    left: 7px;
+    top:5px;
+}
+.card{
+    float: left;
+   box-sizing: border-box;
+    background-color:var(--content-01);
+width: 330px;
+height: 403px;
+border-radius: 10px;
+position: relative;
+margin-left: 10px;
+;
+
+
+}
+.card img{
+    position: absolute;
+    top:50px;
+    left: 110px;
+
+}
+.card-comment{
+    position: absolute;
+    bottom: 30px;
+    margin: 10px;
+    color: var(--text);
+}
+/*section-03*/
+.section-03{
+
+    height: 655px;
+}
+.section-03-title {
+    text-align: center;
+    font-size: 33px;
+    margin-bottom: 20px;
+    font-weight: 900;
+    color: var(--text);
+}
+.check {
+    
+    text-align: center;
+    display: flex;
+    width: 1000px;
+}
+.check a{
+    color: var(--text);
+    border: solid  1px;
+    padding: 10px 50px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.check-btn{
+    text-align: center;
+  
+    width: 200px;
+ 
+    height: 28px;
+
+}
+.section03-img{
+  
+    height: 400px;
+    margin-top: 20px;
+    width: 1000px;
+    display: flex;
+}
+.img-card{
+    width: 300px;
+   
+    border-radius: 20px;
+}
+.img-card:nth-child(1){
+    background: url(../logo/Frame\ 39.png);
+}
+.img-card:nth-child(2){
+    background: url(../logo/Frame\ 40.png);
+}
+.img-card:nth-child(3){
+    background: url(../logo/Frame\ 42.png);
+}
+button{
+    background: none;
+   
+    border: none;
+    font-weight: 400;
+    color: var(--text);
+    cursor: pointer;
+}
+button:checked{
+    background-color: var(--button);
+}
+/**/
+.section04{
+ 
+    width: 100%;
+    height: 600px;
+}
+
+/*section04*/
+.section04-title{
+    text-align: center;
+    font-size: 33px;
+    font-weight: 900;
+    color:var(--text);
+}
+.section04-content{
+    margin-top: 20px;
+    text-align: center;
+   
+    height: 208px;
+    width: 1000px;
+    display: flex;
+
+}
+.content4{
+    width: 308px;
+    border-radius: 20px;
+    background-color: #1F2839;
+    position: relative;
+    
+}
+.content4-text{
+    margin: 10px;
+    position: absolute;
+    width: 286px;
+    height: 96px;
+    top:20px;
+    color:var(--text);
+    font-weight: 400;
+}
+.intro-img{
+    position: relative;
+    top:150px;
+    left: -60px;
+}
+.intro-img img{
+    position: absolute;
+}
+.intro-img label{
+    position: absolute;
+    right: 40px;
+    top:5px;
+    color: var(--text);
+    font-weight: 900;
+
+}
+.section-05{
+    width: 100%;
+    height: 500px;
+}
+.section-05-title{
+    color: var(--text);
+    text-align: center;
+    font-weight: 900;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.section05-location{
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+iframe{
+    width: 1000px;
+    border-radius: 20px;
+    height: 320px;
+}
+/*section-06*/
+.section-06{
+    height: 1000px;
+}
+.section-06-title{
+    font-size: 33px;
+    text-align: center;
+    font-weight: 900;
+    color: var(--text);
+    margin-bottom: 50px;
+}
+.section-06-content{
+    border-bottom: solid 1px rgb(91, 101, 115);
+    width: 504px;
+   font-size: 24px;
+   color: var(--text);
+   font-weight: 900;
+    cursor: pointer;
+   padding: 15px;
+  
+
+}
+.section-06-subContent input[type ="checkbox"]{
+    display: none;
+}
+.section-06-subContent{
+    margin-top: 20px;
+    
+    width: 336px;
+    height: 286px;
+    text-align: center;
+  
+}
+.section-06-subContent h1{
+    margin-bottom: 10px;
+    color: var(--text);
+}
+table{
+    cursor: pointer;
+}
+th{
+   color: rgba(110, 134, 255, 1);
+   padding: 10px;
+}
+#June{
+    font-weight: 500;
+    color: rgb(91, 101, 115);
+}
+td{
+    font-weight: 500;
+    padding: 5px;
+    color: var(--text);
+}
+.section-06-subContent label{
+    display: block;
+    font-weight: 900;
+    margin-top: 50px;
+    color: var(--text);
+    font-size: 20px;
+  
+}
+
+.section-06-content span{
+   
+    width: 30px;
+    float: right;
+    height: 30px;
+    
+    content: url(../img/Icon.png);
+}
+/* span:after .active{
+    content: url(../img/Icon\ \(2\).png)
+} */
+span.active{
+    transform: rotate(180deg);
+}
+
+span.revers{
+    transform: rotate(0deg);
+}
+input[type = "text"]{
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 15px 10px;
+    background-color: #1F2839;
+    border: none;
+    font-size: 30px;
+    color: white;
+}
+.section-06-subContent button{
+    
+    transform: translateX(-130px);
+    margin-top: 20px;
+    background-color: var(--button);
+    border-radius: 10px;
+    padding: 15px 260px;
+    font-size: 30px;
+    color:#1F2839;
+    font-weight: 400;
+}
