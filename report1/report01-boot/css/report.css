@@ -1,0 +1,502 @@
+:root{
+    --backColor: #2D374B;
+    --content-01:  #1F2839;
+    
+    --text: #FFFFFF;
+    --button: #4DE785;
+    --check: #4DE785;
+    --title:#4DE785;
+    --header-title:16px;
+
+
+}
+*{
+    margin: 0 auto;
+}
+body{
+    background-color: var(--backColor);
+}
+.headClass{
+    position: relative;
+    height: 80px;
+  
+}
+.header{
+    box-sizing: border-box;
+  position: fixed;
+  width: 100%;
+  border: solid 1px;
+  z-index: 10;
+  background-color: rgb(24, 31, 44, 0.8)
+  
+
+}
+
+.header-map{
+    box-sizing: border-box;
+    padding: 20px;
+    
+    width: 1000px;
+    display: flex;
+}
+.header-map h2{
+    color: var(--check);
+}
+.header-map a{
+    text-decoration: none;
+    color: white;
+}
+/*section-01*/
+ .section-01{
+    height: 510px;
+   
+    display: flex;
+}
+.section-slide{
+
+    width: 100%;
+}
+.section-01 .section1-log.active{
+    opacity: 1;
+}
+.section-comment{
+
+    
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--text);
+}
+.section1-log{
+   transition: 0.3s;
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    display: none;
+    opacity: 0;
+}
+.section1-log.active{
+    display: block;
+    opacity: 1;
+}
+.section-02{
+
+
+}
+/*section-02*/
+
+label[for = "tab1"].active{
+    background-color: white;
+    color: white;
+}
+.section-02-button label:hover{
+    background-color: white;
+    color: #1F2839;
+}
+.section-02-button label:hover i{
+   
+    color: #1F2839;
+}
+.section-02{
+    height: 620px;
+    
+}
+.section-02-title{
+    text-align: center;
+    font-size: 28px;
+    color: var(--text);
+    font-weight: 900;
+}
+.section-02-button{
+    height: 28px;
+    width: 100px;
+ 
+    position: relative;
+    right: -400px;
+    top:40px
+}
+.section-02-button label{
+    cursor: pointer;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+}
+label[for="tab1"]{
+    transition: 0.5s;
+    left: 50px;
+    width: 30px;
+    height: 30px;
+    border: solid 1px;
+    color: var(--text);
+}
+label[for="tab2"]{
+    transition: 0.5s;
+    color: var(--text);
+    left: 0px;
+    width: 30px;
+    height: 30px;
+    border: solid 1px;
+}
+.section-02-button input{
+        display: none;     
+        
+}
+.section-02-cardSlide{
+   
+    width: 1030px;
+    padding-top: 50px;
+    overflow: hidden;
+    
+}
+
+
+.section-02-card{
+    width: 2100px;
+    height: 500px;
+
+}
+.section-02-button i{
+    color: white;
+    position: absolute;
+    left: 7px;
+    top:5px;
+}
+.card{
+    float: left;
+   box-sizing: border-box;
+    background-color:var(--content-01);
+width: 330px;
+height: 403px;
+border-radius: 10px;
+position: relative;
+margin-left: 10px;
+;
+
+
+}
+.card img{
+    position: absolute;
+    top:50px;
+    left: 110px;
+
+}
+.card-comment{
+    position: absolute;
+    bottom: 30px;
+    margin: 10px;
+    color: var(--text);
+}
+/*section-03*/
+.section-03{
+
+    height: 655px;
+}
+.section-03-title {
+    text-align: center;
+    font-size: 33px;
+    margin-bottom: 20px;
+    font-weight: 900;
+    color: var(--text);
+}
+.check {
+    
+    text-align: center;
+    display: flex;
+    width: 1000px;
+}
+/* .check a{
+    color: #181f2c;
+    font-weight: 900;
+    padding: 10px 50px;
+    border-radius: 20px;
+    transition: 0.3s;
+    text-decoration: none;
+} */
+ .check input {
+    display: none;
+ }
+ .check label{
+    cursor: pointer;
+    padding: 5px 30px;
+    border-radius: 20px;
+    color: var(--text);
+    transition: 0.5s;
+    font-weight: 900;
+ }
+ .check input[id = "test1"]:checked ~ label[for = test1]{
+    background-color: var(--button);
+    color: #181f2c;
+ }
+ .check input[id = "test2"]:checked ~ label[for = test2]{
+    background-color: var(--button);
+    color: #181f2c;
+ }
+ .check input[id = "test3"]:checked ~ label[for = test3]{
+    background-color: var(--button);
+    color: #181f2c;
+ }
+ .check input[id = "test4"]:checked ~ label[for = test4]{
+    background-color: var(--button);
+    color: #181f2c;
+ }
+ .check input[id = "test5"]:checked ~ label[for = test5]{
+    background-color: var(--button);
+    color: #181f2c;
+ }
+.check-btn{
+    text-align: center;
+  
+    width: 200px;
+ 
+    height: 28px;
+
+}
+.plusColor{
+    background-color: var(--button);
+    color: var(--content-01);
+    
+}
+.section03-img{
+  
+    height: 400px;
+    margin-top: 20px;
+    width: 1000px;
+    display: flex;
+}
+.img-card{
+    width: 300px;
+   
+    border-radius: 20px;
+}
+.img-card:nth-child(1){
+    background: url(../logo/Frame\ 39.png);
+}
+.img-card:nth-child(2){
+    background: url(../logo/Frame\ 40.png);
+}
+.img-card:nth-child(3){
+    background: url(../logo/Frame\ 42.png);
+}
+/* .check a:hover{
+    background-color: #4DE785;
+} */
+
+/**/
+.section04{
+ 
+    width: 100%;
+    height: 600px;
+}
+
+/*section04*/
+.section04-title{
+    text-align: center;
+    font-size: 33px;
+    font-weight: 900;
+    color:var(--text);
+}
+.section04-content{
+    margin-top: 20px;
+    text-align: center;
+   
+    height: 208px;
+    width: 1000px;
+    display: flex;
+
+}
+.content4{
+    width: 308px;
+    border-radius: 20px;
+    background-color: #1F2839;
+    position: relative;
+    
+}
+.content4-text{
+    margin: 10px;
+    position: absolute;
+    width: 286px;
+    height: 96px;
+    top:20px;
+    color:var(--text);
+    font-weight: 400;
+}
+.intro-img{
+    position: relative;
+    top:150px;
+    left: -60px;
+}
+.intro-img img{
+    position: absolute;
+}
+.intro-img label{
+    position: absolute;
+    right: 40px;
+    top:5px;
+    color: var(--text);
+    font-weight: 900;
+
+}
+.section-05{
+    width: 100%;
+    height: 500px;
+}
+.section-05-title{
+    color: var(--text);
+    text-align: center;
+    font-weight: 900;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.section05-location{
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+iframe{
+    width: 1000px;
+    border-radius: 20px;
+    height: 320px;
+}
+/*section-06*/
+.section-06{
+    height: 1000px;
+}
+.section-06-title{
+    font-size: 33px;
+    text-align: center;
+    font-weight: 900;
+    color: var(--text);
+    margin-bottom: 50px;
+}
+.section-06-content{
+    border-bottom: solid 1px rgb(91, 101, 115);
+    width: 504px;
+   font-size: 24px;
+   color: var(--text);
+   font-weight: 900;
+    cursor: pointer;
+   padding: 15px;
+  
+
+}
+.section-06-subContent input[type ="checkbox"]{
+    display: none;
+}
+.section-06-subContent{
+    margin-top: 20px;
+    
+    width: 336px;
+    height: 286px;
+    text-align: center;
+  
+}
+.section-06-subContent h1{
+    margin-bottom: 10px;
+    color: var(--text);
+}
+table{
+    cursor: pointer;
+}
+th{
+   color: rgba(110, 134, 255, 1);
+   padding: 10px;
+}
+
+#June{
+    font-weight: 500;
+    
+    
+    color: rgb(91, 101, 115);
+}
+td{
+    font-weight: 500;
+    
+    color: var(--text);
+}
+.section-06-subContent label{
+    display: block;
+    font-weight: 900;
+    margin-top: 50px;
+    color: #181f2c;
+    font-size: 20px;
+    cursor: pointer;
+    
+  
+}
+.section-06-subContent i{
+    margin-right: 20px;
+}
+
+.section-06-content div{
+   
+    width: 30px;
+    float: right;
+    height: 30px;
+    
+    content: url(../img/Icon.png);
+}
+
+/* span:after .active{
+    content: url(../img/Icon\ \(2\).png)
+} */
+.arrow.active{
+    transform: rotate(180deg);
+}
+
+span.revers{
+    transform: rotate(0deg);
+}
+input[type = "text"]{
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 15px 10px;
+    background-color: #1F2839;
+    border: none;
+    font-size: 30px;
+    color: white;
+}
+.section-06-subContent label:nth-child(2){
+   
+}
+.section-06-subContent button{
+    
+    transform: translateX(-130px);
+    margin-top: 20px;
+    background-color: var(--button);
+    border-radius: 10px;
+    padding: 15px 260px;
+    font-size: 30px;
+    color:#1F2839;
+    font-weight: 400;
+    transition: 0.5s;
+}
+.section-06-subContent button:hover{
+    background-color: var(--text);
+    color: var(--backColor);
+}
+.section-06-subContent button:disabled, button[disabled]{
+    background-color: white;
+    color: var(--content-01);
+    opacity: 0.8;
+}
+
+
+input[id = "tab4"]:checked ~ label[for = "tab4"]{
+    color: var(--check);
+}
+input[id = "tab5"]:checked ~ label[for = "tab5"]{
+    color: var(--check);
+}
+input[id = "tab6"]:checked ~ label[for = "tab6"]{
+    color: var(--check);
+}
+.reservation{
+    border: solid 1px;
+    border-radius: 50%;
+  
+    background-color: var(--check);
+    color: #181f2c;
+    font-weight: 900;
+}
