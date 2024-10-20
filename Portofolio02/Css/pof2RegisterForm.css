@@ -1,0 +1,236 @@
+*{
+    margin: auto 0;
+}
+
+.title{
+    position: relative;
+    width: 100%;
+    top:30px;
+    text-align: center;
+
+}
+.title h1{
+    font-size:45px;
+    color: rgb(29, 9, 3);
+}
+.title p{
+    font-size: 20px;
+    font-weight: 900;
+    color: rgb(165, 71, 42);
+}
+.main{
+  
+   
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    background-attachment: fixed;
+    background: url(../pof02img/pofboook.jpg);
+    background-size: 100% 100%;
+}
+.login{
+    z-index: 100;
+    position: relative;
+    width: 500px;
+    height: 100vh;
+    background-color: rgb(241, 231, 213);
+}
+.container{
+    position: absolute;
+ 
+    height: 100%;
+    top:250px;
+   left: 50px;
+    text-align: center;
+
+
+}
+
+.container input{
+    border-radius: 10px;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    border: solid 2px rgb(0, 0, 0,0.5);
+    padding: 10px;
+    display: block;
+    
+}
+input::placeholder{
+    font-size: 20px;
+}
+.container button{
+    margin-top: 100px;
+    width: 400px;
+    padding: 10px;
+    font-size: 25px;
+    background-color: orangered;
+    border: none;
+    border-radius: 10px;
+    font-weight: 900;
+   
+    left: 0px;
+    transition: 0.3s;
+
+}
+button:hover{
+    background-color: rgb(248, 205, 125);
+    color: orangered;
+}
+.click-container{
+    margin-top: 20px;
+}
+
+
+
+/*login - icon*/
+.login-map{
+  
+    position: relative;
+    height: 100px;
+    width: 100px;
+    top:50px;
+    left: 30px;
+    transition: 0.5s;
+    text-align: center;
+
+}
+.login span{
+    right: 10px;
+    width: 100px;
+    height: 100px;
+    transition: 0.5s;
+    position: absolute;
+
+}
+.login span:nth-child(1){
+    border-radius: 20px 60px 30px 40px;
+    transform: rotate(180deg);
+    background-color: orangered;
+    
+    animation: ani linear infinite 10s;
+}
+
+.login span:nth-child(2){
+    border-radius: 20px 60px 30px 40px;
+    transform: rotate(20deg);
+    
+    animation: ani linear infinite 10s reverse; 
+    background-color: orangered; 
+}
+
+.login span:nth-child(3){
+    
+    animation: ani linear infinite 10s;
+    background-color: orangered;
+    border-radius: 20px 60px 30px 40px;
+}
+.login span:hover {
+    background-color: rebeccapurple;
+}
+.login-map:hover span{
+background-color: rgb(204, 124, 124);
+}
+@keyframes ani{
+    0%{
+        transform: rotate(0deg);
+       
+    }
+    100%{
+     
+        transform: rotate(360deg);
+    }
+}
+.check-content{
+    text-align: center;
+   z-index: 1;
+    position: relative;
+   top:150px;
+   
+    
+}
+.content{
+    position: absolute;
+    top:20px;
+    text-align: center;
+   
+}
+
+
+label{
+    margin-top: 10px;
+    display: flex;
+    font-weight: 900;
+    font-size: 25px;
+    cursor: pointer;
+   
+}
+input[name ="register"]:checked label{
+    color: rgb(165, 71, 42);
+}
+.active{
+    color: rgb(165, 71, 42);
+}
+input[type = "checkbox"]:checked ~ .content label{
+    color: rgb(165, 71, 42);
+}
+.regist-Form{
+    position: absolute;
+ 
+}
+.modal{
+    position: relative;
+    background-color: rgb(224, 224, 224);
+    width: 300px;
+    height: 150px;
+    left: 150%;
+    top:20%;
+    padding: 10px;
+    font-size: 17px;
+    border-radius: 10px;
+    transform: translateX(100%),translateY(50%);
+    display: none;
+}
+.modal-close-btn{
+    position: absolute;
+    right: 20px;
+    font-size: 20px;
+    font-weight: 900;
+    cursor: pointer;
+    color: black;
+}
+.modal-close-btn:hover{
+    color:red;
+}
+.modal-content{
+    font-weight: 900;
+    position: absolute;
+    top:50px;
+    left: 30px;
+    display: flex;
+}
+.modal-btn{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    top:100px;
+    height: 70px;
+    border-radius: 0px 0px 10px 10px;
+    background-color: orangered;
+}
+.modal-btn button{
+    cursor: pointer;
+    transform: translateY(10px);
+    font-weight: 900;
+    background-color: rgb(248, 205, 125);
+    border-radius: 20px;
+    border: none;
+    padding: 12px;
+    transition: 0.5s;
+}
+.modal-btn button:hover{
+    background-color: rgb(29, 9, 3);
+    color: rgb(248, 205, 125);
+}

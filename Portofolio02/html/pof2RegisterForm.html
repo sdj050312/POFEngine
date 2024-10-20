@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 작성</title>
+    <link rel="stylesheet" href="../Css/pof2RegisterForm.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+
+</head>
+<body>
+    <div class = "main">
+        <div class = "login">
+            <div class = "login-map">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class = "title">
+            <h1>30분 독쏘</h1>
+            <p>서비스 이용시 회원가입은 필수</p>
+                </div>
+
+
+            <div class = "container">
+                
+                <div class= "regist-Form">
+                    <form action="">
+                    <label for="id_form">아이디</label>
+                    <input type="text" name = "tab-con" id = "id_form"placeholder = "아이디" autocomplete="id">
+                    <label for="id_form">비밀번호</label>
+                    <input type="password" name = "tab-con" id = "password"placeholder = "비밀번호">
+                    <label for="id_form">비밀번호 재확인</label>
+                    <input type="password" name = "tab-con" id = "cpassword" placeholder = "비밀번호 확인">
+                    <label for="id_form">Email</label>
+                    <input type="email" name = "tab-con" id = "email"  placeholder = "이메일 입력">
+                
+                    <button type = "button" disabled >회원 가입 완료</button>
+                    </form>
+                </div>
+                
+                
+            </div>
+            
+                    <div class="modal">
+                        <div class = "modal-close-btn">x</div>
+                        <div class = "modal-content">
+                            30분 독쏘에 오신것을 환영합니다! <br>
+
+                        </div>
+                        <div class = "modal-btn">
+                            <button type ="button">로그인 화면으로 이동</button>
+                        </div>
+                    </div>
+              
+             <script src = "../src/RegisterForm.js">
+                
+             </script>
+   
+</body>
+</html>

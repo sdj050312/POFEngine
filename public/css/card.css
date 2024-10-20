@@ -1,0 +1,51 @@
+*{
+    margin: 0 auto;
+}
+.card-inner{
+    height: 300px;
+    width: 1200px;
+   
+    display: flex;
+}
+.card-item{
+    border-radius: 20px;
+   
+    background-color: rgb(12, 35, 105);
+    width: 500px;
+    position: relative;
+}
+.fornt{
+   
+}
+.front div{
+
+}
+.front .content{
+    color: white;
+    font-weight: 900;
+    width: 100%;
+    top:20px;
+    height: 80%;
+    position: absolute;
+
+}
+.content div{
+    padding: 10px;
+}
+.card-back{
+    position: relative;
+    color: white;
+    font-weight: 900;
+}
+.card-back .content div{
+    position: absolute;
+    padding: 10px;
+    top:20px;
+}
+.card-back{
+    background-color: rgb(12, 35, 105);
+    border-radius: 20px;
+    
+    width: 500px;
+
+}
